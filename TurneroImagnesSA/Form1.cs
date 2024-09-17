@@ -77,14 +77,14 @@ namespace TurneroImagnesSA
             
             turnos.Add(turno);
             string mensaje = "";
-            //foreach (Turno item in turnos)
-            //{
-            //    mensaje = mensaje + item.InformeTurnos();      
-            //}
-            for (int i = 0; i < turnos.Count; i++)
+            foreach (Turno item in turnos)
             {
-                mensaje = mensaje + turnos[i].InformeTurnos() + "/r/n";
+                mensaje = mensaje + item.InformeTurnos();
             }
+            //for (int i = 0; i < turnos.Count; i++)
+            //{
+            //    mensaje = mensaje + turnos[i].InformeTurnos() + "/r/n";
+            //}
         }
 
         private void btTurnos_Click(object sender, EventArgs e)
